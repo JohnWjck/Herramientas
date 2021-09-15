@@ -1,0 +1,27 @@
+para comenzar un proyecto laravel se tipea en la terminal lo sigiente:
+laravel new crud
+
+luego se le agrega la el metodo a utilizar:
+composer require laravel/ui
+
+con la base de datos ya creada se revisa la conexion aplicando una migracion
+php artisan migrate:fresh
+
+se crean los archivos los cuales empesaremos a utilizar con algunas asignaciones
+php artisan make:model *Nombre del archivo* -mfr --api
+
+opcional para provar se crean los seeders
+refrescan la base de datos con
+php artisan migrate:fresh --seed
+
+se invoca por terminal a vue para que este en las dependencias
+php artisan ui vue --auth
+
+intalas los npm 
+npm install
+
+y se ejecuta los npm con 
+npm run dev
+
+luego se aplica el siguiente comando para que npm siempre se quede escuchando
+npm run watch

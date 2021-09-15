@@ -1,0 +1,19 @@
+1) para ver las bases de datos:
+
+show databases;
+
+2) para usar las base de datos:
+
+use Nombre de la base de datos;
+
+3) para crear base de datos:
+
+create database miprueba;
+
+4) para ver las tablas dentro de la base de datos:
+
+show tables;
+
+5) para saber la informacion de la tabla:
+
+describe Nombre_de_la_tabla;

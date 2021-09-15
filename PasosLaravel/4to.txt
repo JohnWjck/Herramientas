@@ -1,0 +1,38 @@
+se comiensa instalando la instancia y el proyecto de laravel
+: laravel new Nombre_del_proyecto
+
+luego se instala el paquete complemento de laravel ui
+: composer require laravel/ui
+
+luego se instala vue con el siguiente comando
+: php artisan ui vue --auth
+
+luego se instala el compilador Npm
+: npm install
+
+se le da arranque al npm
+: npm run dev
+
+luego se le da marcha al npm
+: npm run watch
+
+ahora se crean las migraciones para que la base de datos se sincrionise con el proyecto
+: php artisan migrate:fresh
+
+
+el nav de logueo
+<body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif

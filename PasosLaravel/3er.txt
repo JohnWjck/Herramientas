@@ -1,0 +1,22 @@
+iniciar creando un proyecto con composer
+composer create-project --prefer-dist laravel/larevel 3cer
+
+luego se crea un sistema de autenticasion 
+php artisan make:auth
+
+se crea la base de datos y se migra
+php artisan migrate
+
+luego se modifica el archivo home.blade.php
+
+se crean y se modifica la vista con vue para saber que todo funciona
+
+luego se crea las rutas y el archivo para el controlador
+php artisan make:controller PensamientoController --api
+
+se crean las tablas que se vallan al utilizar 
+php artisan make:model Pensamiento -m
+
+manera de crear tabla foranea con relacion 
+$table->unsignedBigInteger('user_id');
+$table->foreign('user_id')->references('id')->on('user');
