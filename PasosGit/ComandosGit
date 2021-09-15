@@ -1,0 +1,19 @@
+Para ver los nuevos archivos que no se han guardado:
+
+git status
+
+para agrupar todos los archivos nuevos para agregar:
+
+git add .
+
+Para guardar los cambios de manera local antes de subir:
+
+git commit -m "etiqueta de la vercion"
+
+Para guardar los cambios en la rama:
+
+git branch -M Nombre de la rama 
+
+para subir a github:
+
+git push
